@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Relativas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            Usar px, em
+
+            16px geralemente é igual 1em
+            */
+            font-size: 1em;
+        }
+        h1{
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            /* Posso resumir esse comando de cima usando o shorthand font
+
+            shorthand font (tem que ser na ordem abaixo)
+            font-style -> font-weight -> font-size -> font-family
+
+            Exemplo no h2 abaixo!
+            */
+        }
+        h2{
+            font: italic bolder 3em Arial; /*shorthan font*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium illum unde ex facilis! Consectetur beatae optio rerum pariatur doloremque quod fugit esse reiciendis debitis amet, qui eum iusto maxime nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, assumenda neque iste libero numquam eveniet voluptatibus consequatur iusto ut ipsum fugiat excepturi quas dicta eligendi beatae quod at dolor est.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium itaque hic asperiores veniam unde rerum harum explicabo iusto? Maiores repellat sequi nesciunt quaerat possimus omnis iure quis ea sint dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aliquid nisi numquam excepturi? Fuga, ipsa laudantium eligendi enim cumque cum tenetur ipsam, magnam dolorum, officiis ab molestias earum praesentium alias.</p>
+</body>
+</html>
