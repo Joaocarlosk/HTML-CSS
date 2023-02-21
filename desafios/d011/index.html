@@ -6,10 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astronauta</title>
     <style>
-        
+        body{
+            margin: 0px;
+        }
+        #ceu{
+            background-image: url(imagens/espaco.jpg);
+            background-size: 100% 100%;
+            position: relative;
+            height: 95.7vh;
+            padding: 20px;
+        }
+
+        #astronauta{
+            background-image: url(imagens/astronauta.png);
+            background-size: 100% 100%;
+            position: absolute;
+            height: 500px;
+            width: 500px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
 <body>
-    
+    <div id="ceu">
+        <div id="astronauta">
+
+        </div>
+    </div>
 </body>
 </html>
