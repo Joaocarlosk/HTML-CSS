@@ -1,0 +1,65 @@
+@charset "UFT-8";
+
+*{  /*Configuração geral para todos os elementos*/
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh; /*Mínimo da altura do view height. Dá pra usar também vw que é o view width.*/
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase;*/ /*Colocar todas as letras em maiúsculo.*/
+    font-variant: small-caps; /*Deixa tudo maiúsculo mas a primeira letra fica maior um pouco e as outras menores.*/
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+a{ /*Configuração dos links*/
+    color: white;
+    text-decoration: none; /*TIrando o sublinhado*/
+    font-weight: bold; /*Colocando em negrito*/
+}
+
+a:hover{ /*Quando passar o mouse por cima do link.*/
+    text-decoration: underline;
+}
+
+section{ /*Aqui estou fazendo configurações em todas as sections.*/
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*Altura da linha, para separar um pouco.*/
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+}
+
+section.imagem{
+    color: white;
+}
+
+section.imagem > p{ /*Todo parágrafo que tem dentro da section que tem a classe imagem.*/
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.259);
+}
+
+footer{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+}
