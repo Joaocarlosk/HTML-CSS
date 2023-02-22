@@ -57,18 +57,38 @@ section{ /*Aqui estou fazendo configurações em todas as sections.*/
     font-size: 3.5vw;
 }
 
+section > p{
+    padding-bottom: 2em;
+}
+
 section.normal{
     background-color: white;
 }
 
 section.imagem{
+    background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514); /*Inset dá uma sombra pra dentro.*/
+    background-attachment: fixed; /*Aqui dá o efeito paralaxe. A imagem fica fixa e o texto rola.*/
 }
 
 section.imagem > p{ /*Todo parágrafo que tem dentro da section que tem a classe imagem.*/
     display: inline-block; /*Caixa se adapata ao taamnho do conteúdo.*/
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.259);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1.5px 1.5px 0px black;
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center; /*Posiciona na parte central direita da imagem.*/
+    background-size: cover; /*Melhora o tamanho quando aumenta e diminui a tela*/
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer{
