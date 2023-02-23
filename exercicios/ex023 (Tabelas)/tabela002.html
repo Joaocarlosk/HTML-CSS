@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /*Configuração colocada para conseguir colocar o cabeçalho fixo.*/
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }   
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky; /*Configuração colocada para conseguir colocar o cabeçalho fixo.*/
+            top: -1px; /*Posiciona o cabeçalho na posição 0. Background tem que ser feito também. Abaixo está a configuração.*/
+            background-color: gray; /*Puxa o background cinza junto com o cabeçalho.*/
+        }
+
+        tbody > tr:nth-child(2n){ /*Pseudoclasse para dar o efeito zebrado. 2n significa que de 2 em duas linhas ele coloca o background. Posso usar também a odd, para deixar somente as linhas impares com background ou even para pares.*/
+            background-color: lightgray;
+        }
+
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION (LEGENDA DA TABELA)
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH  
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População dos estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!--col é para qunado é o nome da coluna, quando o th é o nome da linha tem o exemplo mais abaixo no tfoot.-->
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49 919 125</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">11 111 111</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">22 222 222</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">33 333 333</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">44 444 444</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--row porque o dado está na mesma linha.-->
+                <td class="num"><strong>999.999.999</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
