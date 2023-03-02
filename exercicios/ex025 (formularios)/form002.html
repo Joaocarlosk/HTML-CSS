@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on"> <!--Desliga ou liga de todo o formulário. Só tenho a opção on e off, mas se eu deixar ligado aqui eu posso determinar no input text qual tipo de autocomplete eu quero. Exemplos abaixo.-->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="nome do usuário" autocomplete="username"> <!--O name é mais útil para o HTML e a linguagem back-end. E o id é mais útil para o JavaScript e para o Label.-->
+            <!--Required á para deixar o campo obrigatório. O navegador tem isso preparado, há um JavaScript por trás.-->
+            <!--minlenght e maxlenght determina a quantidade mínima e máxima de caracteres que devem ser digitados pelo usuário.-->
+            <!--Size ele deixa o tamanho da caixa do tamanho dos caracteres que eu determinar.-->
+            <!--placeholder siginifica espaço reservado, ele coloca um texto no fundo informando para que serve aquela caixa ou o que deve ser digitado dentro, fica a critério do desenvolvedor.-->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="12" size="12" placeholder="senha" autocomplete="current-password"> <!--type password não deixa aparecer os caracteres na tela.-->
+            <!--Required á para deixar o campo obrigatório. O navegador tem isso preparado, há um JavaScript por trás.-->
+            <!--Current password ele sugere a senha que já utilizo no site e new-password é para quando eu crio uma nova senha.-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"> <!--Botão para limpar os campos usuário e senha.-->
+        </p>
+    </form>
+</body>
+</html>
