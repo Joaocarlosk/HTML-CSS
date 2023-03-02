@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--autocomplete off para desligar o preenchimento automático--> <!--O action vai fazer o envio dos dados para o back-end somente depois do botão submit for acionado.-->
+    <!--Por padrão o método é o GET, se eu não colocar nada.-->
+    <!--Dados com mais de 3 mil bytes não dá pra usar o GET. GET também não pode ser usado para dados que necessitam de segurança.-->
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p> <!--O name é mais útil para o HTML e a linguagem back-end. E o id é mais útil para o JavaScript.-->
+        <p>
+            <label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
