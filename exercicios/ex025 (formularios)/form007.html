@@ -38,6 +38,11 @@
         <!--Para criar uma lista dentro da caixa tenho que criar um id e colocar essa lista no input.-->
         <!--Se eu tirar o value ele deixa a lista normal.-->
         <p>
+            <label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            <!--Para o textarea tem que colocar o método do form como post pois o get tem aquele limite de 3000bytes somente.-->
+        </p>
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
